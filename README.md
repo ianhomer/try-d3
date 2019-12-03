@@ -1,3 +1,3 @@
 # Try D3
 
-    yarn start
+    npm run start
