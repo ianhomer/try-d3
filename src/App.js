@@ -7,25 +7,25 @@ import {
   Link,
 } from "react-router-dom";
 import  About from "./component/About";
-import  Simple from "./component/Simple";
+import  Svg from "./component/Svg";
 
 function App() {
   return (
     <Router>
-      <div>
+      <div className="body">
         <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/simple">Simple D3</Link>
+              <Link to="/svg">Svg</Link>
             </li>
           </ul>
         </nav>
         <Switch>
-          <Route path="/simple">
-            <Simple />
+          <Route path="/svg">
+            <Svg />
           </Route>
           <Route path="/">
             <About />
